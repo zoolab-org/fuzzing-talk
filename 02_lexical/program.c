@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* run it with environment variable MallocNanoZone=0
+ * if mac OS X complains about nano zone abandoned */
+
 int main(int argc, char** argv) {
     /* Create an array with 100 bytes, initialized with 42 */
     char *buf1 = malloc(100), *buf2 = malloc(100);
